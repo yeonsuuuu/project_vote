@@ -79,8 +79,8 @@
                   <constraint>
                     <height>-1</height>
                     <width>-1</width>
-                    <x>299</x>
-                    <y>345</y>
+                    <x>337</x>
+                    <y>352</y>
                   </constraint>
                   <sourceConnections/>
                   <targetConnections>
@@ -281,8 +281,8 @@
                                           <targetConnections/>
                                           <error></error>
                                           <linkedPath></linkedPath>
-                                          <tableName>QUESTION/SELECTION</tableName>
-                                          <logicalName>QUESTION/SELECTION</logicalName>
+                                          <tableName>QUESTION_SELECTION</tableName>
+                                          <logicalName>QUESTION_SELECTION</logicalName>
                                           <description></description>
                                           <columns>
                                             <net.java.amateras.db.visual.model.ColumnModel>
@@ -376,8 +376,8 @@
                               <targetConnections/>
                               <error></error>
                               <linkedPath></linkedPath>
-                              <tableName>VOTE/QUESTION</tableName>
-                              <logicalName>VOTE/QUESTION</logicalName>
+                              <tableName>VOTE_QUESTION</tableName>
+                              <logicalName>VOTE_QUESTION</logicalName>
                               <description></description>
                               <columns>
                                 <net.java.amateras.db.visual.model.ColumnModel>
@@ -516,9 +516,14 @@
                             <defaultValue></defaultValue>
                           </net.java.amateras.db.visual.model.ColumnModel>
                           <net.java.amateras.db.visual.model.ColumnModel>
-                            <columnName>GROUP_ID</columnName>
-                            <logicalName>GROUP_ID</logicalName>
-                            <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../../targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel/source/sourceConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/target/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/source/sourceConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/target/columns/net.java.amateras.db.visual.model.ColumnModel/columnType"/>
+                            <columnName>PARTY_ID</columnName>
+                            <logicalName>PARTY_ID</logicalName>
+                            <columnType class="net.java.amateras.db.dialect.ColumnType">
+                              <name>VARCHAR</name>
+                              <logicalName>String</logicalName>
+                              <supportSize>true</supportSize>
+                              <type>12</type>
+                            </columnType>
                             <size>20</size>
                             <notNull>false</notNull>
                             <primaryKey>false</primaryKey>
@@ -564,14 +569,14 @@
                   </targetConnections>
                   <error></error>
                   <linkedPath></linkedPath>
-                  <tableName>GROUP</tableName>
-                  <logicalName>GROUP</logicalName>
+                  <tableName>PARTY</tableName>
+                  <logicalName>PARTY</logicalName>
                   <description></description>
                   <columns>
                     <net.java.amateras.db.visual.model.ColumnModel>
-                      <columnName>GROUP_ID</columnName>
-                      <logicalName>GROUP_ID</logicalName>
-                      <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../../targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/source/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel/source/sourceConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/target/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/source/sourceConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/target/columns/net.java.amateras.db.visual.model.ColumnModel/columnType"/>
+                      <columnName>PARTY_ID</columnName>
+                      <logicalName>PARTY_ID</logicalName>
+                      <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../../targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/source/columns/net.java.amateras.db.visual.model.ColumnModel[8]/columnType"/>
                       <size>20</size>
                       <notNull>true</notNull>
                       <primaryKey>true</primaryKey>
@@ -580,9 +585,9 @@
                       <defaultValue></defaultValue>
                     </net.java.amateras.db.visual.model.ColumnModel>
                     <net.java.amateras.db.visual.model.ColumnModel>
-                      <columnName>GROUP_USER</columnName>
-                      <logicalName>GROUP_USER</logicalName>
-                      <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../../targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/source/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel/source/sourceConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/target/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/source/sourceConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/target/columns/net.java.amateras.db.visual.model.ColumnModel/columnType"/>
+                      <columnName>PARTY_USER</columnName>
+                      <logicalName>PARTY_USER</logicalName>
+                      <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../../targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/source/columns/net.java.amateras.db.visual.model.ColumnModel[8]/columnType"/>
                       <size>20</size>
                       <notNull>true</notNull>
                       <primaryKey>false</primaryKey>
@@ -591,9 +596,9 @@
                       <defaultValue></defaultValue>
                     </net.java.amateras.db.visual.model.ColumnModel>
                     <net.java.amateras.db.visual.model.ColumnModel>
-                      <columnName>GROUP_CON</columnName>
-                      <logicalName>GROUP_CON</logicalName>
-                      <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../../targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/source/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel/source/sourceConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/target/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/source/sourceConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/target/columns/net.java.amateras.db.visual.model.ColumnModel/columnType"/>
+                      <columnName>PARTY_CON</columnName>
+                      <logicalName>PARTY_CON</logicalName>
+                      <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../../targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/source/columns/net.java.amateras.db.visual.model.ColumnModel[8]/columnType"/>
                       <size>100</size>
                       <notNull>false</notNull>
                       <primaryKey>false</primaryKey>
@@ -618,14 +623,14 @@
             <targetConnections/>
             <error></error>
             <linkedPath></linkedPath>
-            <tableName>GROUP/USERS</tableName>
-            <logicalName>GROUP/USERS</logicalName>
+            <tableName>PARTY_USERS</tableName>
+            <logicalName>PARTY_USERS</logicalName>
             <description></description>
             <columns>
               <net.java.amateras.db.visual.model.ColumnModel>
-                <columnName>GU_ID</columnName>
-                <logicalName>GU_ID</logicalName>
-                <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../../sourceConnections/net.java.amateras.db.visual.model.ForeignKeyModel/target/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/source/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel/source/sourceConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/target/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/source/sourceConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/target/columns/net.java.amateras.db.visual.model.ColumnModel/columnType"/>
+                <columnName>PU_ID</columnName>
+                <logicalName>PU_ID</logicalName>
+                <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../../sourceConnections/net.java.amateras.db.visual.model.ForeignKeyModel/target/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/source/columns/net.java.amateras.db.visual.model.ColumnModel[8]/columnType"/>
                 <size>20</size>
                 <notNull>false</notNull>
                 <primaryKey>true</primaryKey>
@@ -634,9 +639,9 @@
                 <defaultValue></defaultValue>
               </net.java.amateras.db.visual.model.ColumnModel>
               <net.java.amateras.db.visual.model.ColumnModel>
-                <columnName>GROUP_ID</columnName>
-                <logicalName>GROUP_ID</logicalName>
-                <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../../sourceConnections/net.java.amateras.db.visual.model.ForeignKeyModel/target/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/source/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel/source/sourceConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/target/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/source/sourceConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/target/columns/net.java.amateras.db.visual.model.ColumnModel/columnType"/>
+                <columnName>PARTY_ID</columnName>
+                <logicalName>PARTY_ID</logicalName>
+                <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../../sourceConnections/net.java.amateras.db.visual.model.ForeignKeyModel/target/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel[2]/source/columns/net.java.amateras.db.visual.model.ColumnModel[8]/columnType"/>
                 <size>20</size>
                 <notNull>true</notNull>
                 <primaryKey>false</primaryKey>
